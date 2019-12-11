@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>动物检疫票证电子化系统</title>
+    <link href="../css/login.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="bgBox">
+        <div class="main-container">
+            <div class="loginBox">
+                <div class="loginContainer">
+                    <div class="login-bg">
+                        <img src="../images/login/pic_1.png" />
+                    </div>
+                    <div class="loginContent">
+                        <div class="title">动物检疫票证电子化系统</div>
+                        <div class="formBox">
+                            <div class="formTitle">
+                                <span>欢迎登录</span>
+                                <p class="bottmline"></p>
+                            </div>
+                            <div class="formContent">
+                                <div class="Ipt-panle">
+                                    <i class="icon-user driver"></i>
+                                    <input type="text" placeholder="请输入用户名" />
+                                </div>
+                                <div class="Ipt-panle">
+                                    <i class="icon-pw driver"></i>
+                                    <input type="password" placeholder="请输入密码" />
+                                </div>
+                                <div class="Ipt-panle">
+                                    <span class="chooseText">请选择用户类型</span>
+                                    <div class="chooseBtn" id="chooseBtn"></div>
+                                </div>
+                                <div class="choose-sub-panel hideDown" id="chooseDownPanel">
+                                    <ul>
+                                        <li><a>请选择用户类型1</a></li>
+                                        <li><a>请选择用户类型2</a></li>
+                                        <li><a>请选择用户类型3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btnBox">
+                                    <button class="loginbtn">登录</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="bottomText">福建省农业农村厅（中共福建省委实施乡村振兴战略领导小组办公室）承办:福建省农业信息服务中心</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(function () {
+        $(".Ipt-panle").click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        })
+        var userUlClickIndex = 0;
+        $("#chooseBtn").click(function () {
+            userUlClickIndex++;
+            if (userUlClickIndex % 2 !== 0) {
+                $("#chooseDownPanel").removeClass("hideDown").addClass("slideDown");
+            } else {
+                $("#chooseDownPanel").addClass("hideDown");
+            }
+        })
+
+    })
+</script>
+
+</html>
