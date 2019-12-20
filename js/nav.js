@@ -1,5 +1,7 @@
 $(document).ready(function () {
     slide_menu();
+    hasChoose();
+    chooseOptionClick();
 });
 
 function slide_menu() {
@@ -43,3 +45,27 @@ function reinitIframe() {
 }
 // 定时触发
 window.setInterval("reinitIframe()", 200);
+
+function hasChoose() {
+    var userUlClickIndex = 0;
+    $(".hasChoose-ul li").click(function () {
+        $(this).addClass("selected").siblings().removeClass("selected");
+    })
+    $(".hasChoose-smallcheck-ul li").click(function () {
+        userUlClickIndex++;
+        if (userUlClickIndex % 2 !== 0) {
+            $(this).addClass("selected");
+        } else {
+            $(this).removeClass("selected");
+        }
+    })
+}
+
+// function chooseOptionClick() {
+//     $('.hasChoose-smallcheck-ul li').toggle(function () {
+//         $(this).children(".icon-checkBox-normal").addClass('icon-checkBox');
+//     }, function () {
+//         $(this).children(".icon-checkBox-normal").addClass('icon-checkBox');
+//     });
+
+// }

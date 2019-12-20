@@ -179,8 +179,9 @@ img {
 }
 .right_content{
     padding: 0 20px;
+    background: #f5f5f5;
 }
-i[class^="icon-"] {
+i[class^="icon-"] ,a[class^="icon-"]{
     width: 28px;
     height: 28px;
     display: inline-block;

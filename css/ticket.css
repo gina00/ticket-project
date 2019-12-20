@@ -1,0 +1,347 @@
+.ticketPanel {
+    width: 100%;
+    height: 100%;
+    font-family: "宋体";
+    color: #000;
+}
+
+/* 工具按钮区 */
+.toolPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #99aeca;
+
+}
+
+.toolPanel p {
+    font-size: 16px;
+    color: #8b95a3;
+}
+
+/* 按钮组 */
+.btnPanel .btn {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-print {
+    background: #247bff;
+    color: #fff;
+}
+
+.btn-print:hover {
+    background: #438bf7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back {
+    background: #b2c8ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #aac8f7;
+    color: #fff;
+}
+
+/* 内容总区域 */
+.ticketMainPanel {
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+}
+
+/* 主内容区 */
+.ticketContentPanel {
+    background: #fff;
+    padding: 60px;
+    width: 788px;
+    margin: 0 auto;
+}
+
+/* 票证标题 */
+.ticketContentPanel header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+}
+
+.textPanel {
+    letter-spacing: 4px;
+}
+
+.headText {
+    font-size: 36px;
+}
+
+.subHeadText {
+    font-size: 22px;
+}
+
+.headNumberPanel {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.headNumber {
+    font-size: 22px;
+    color: #fc060b;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.ticketContentPanel .codeImg {
+    width: 40px;
+    height: 40px;
+}
+
+/* 表格区域 */
+.tabelPanel {
+    margin-top: 6px;
+    border: 2px solid #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.table tr td {
+    padding: 16px;
+    border: 1px solid #000;
+}
+
+.table tr td:nth-child(odd) {
+    text-align: justify;
+    text-align-last: justify;
+    width: 87px;
+}
+
+.table tr td:nth-child(even) {
+    text-align: left;
+    min-width: 90px;
+}
+
+.table tr td.tdCenter {
+    text-align: center;
+    text-align-last: auto;
+}
+
+.table tr td.tdLeft {
+    text-align: left;
+    text-align-last: auto;
+}
+
+.table tr td.limitHeight120 {
+    height: 102px;
+}
+
+/* 城市填写面板 */
+.cityPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cityPanel-ul {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.cityPanel-ul li {
+    float: left;
+    width: 25%;
+}
+
+.cityPanel input {
+    width: 75px;
+    text-align: center;
+}
+
+/* 可选择文本 */
+.subTextPanel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.subTextPanel span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.hasChoose {
+    display: flex;
+}
+
+.hasChoose-ul li {
+    float: left;
+    position: relative;
+    margin: 0 10px;
+}
+
+.hasChoose-ul li a {
+    color: #000;
+}
+
+.hasChoose-ul li a:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.selected .icon-bigCheck {
+    width: 30px;
+    height: 30px;
+    background: url("../images/ticketImg/select_2.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+}
+
+/* 小复选框区 */
+.hasChoose-smallcheck-ul {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    width: 100%;
+}
+
+.icon-checkBox-normal {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+.selected .icon-checkBox {
+    width: 10px;
+    height: 10px;
+    background: url("../images/ticketImg/select_1.png") no-repeat;
+    display: inline-block;
+}
+
+.hasChoose-smallcheck-ul li {
+    float: left;
+}
+
+.hasChoose-smallcheck-ul li input {
+    vertical-align: middle;
+}
+
+/* 空白填写区 */
+.blankPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subBlankBorderPanel {
+    display: inline-block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #000;
+}
+
+.subBlankBorderPanel input {
+    width: 100%;
+}
+
+/* 盖章区 */
+.sealAreaPanel {
+    padding: 2px 12px;
+}
+
+.sealAreaPanel .topPanel {
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.sealAreaPanel .bottomPanel {
+    text-align: right;
+}
+
+.datePanel {
+    margin: 10px 0;
+}
+
+.datePanel input {
+    width: 43px;
+}
+
+.blankBorderPanel {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.blankBorderPanel input {
+    width: 100%;
+    text-align: left;
+}
+
+/* 特别类 */
+.limitWidth250 {
+    min-width: 250px;
+}
+
+.limitWidth50 {
+    width: 50px;
+}
+
+.limitWidth120 {
+    min-width: 120px;
+}
+
+.limitHeight120 {
+    min-height: 120px;
+}
+
+a {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+/* 注明说明区 */
+footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+}
+
+footer ol {
+    margin-left: 20px;
+}
+
+footer ol li {
+    list-style: decimal;
+    margin-bottom: 5px;
+}
