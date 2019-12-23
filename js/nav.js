@@ -1,7 +1,6 @@
 $(document).ready(function () {
     slide_menu();
-    hasChoose();
-    chooseOptionClick();
+    hasChoose()
 });
 
 function slide_menu() {
@@ -34,7 +33,7 @@ window.onresize = function () {
 }
 
 function reinitIframe() {
-    var iframe = document.getElementById("menuFrame");
+    var iframe = document.getElementsByClassName("menuFrame");
     try {
         var bHeight = iframe.contentWindow.document.body.scrollHeight;
         var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
@@ -60,12 +59,3 @@ function hasChoose() {
         }
     })
 }
-
-// function chooseOptionClick() {
-//     $('.hasChoose-smallcheck-ul li').toggle(function () {
-//         $(this).children(".icon-checkBox-normal").addClass('icon-checkBox');
-//     }, function () {
-//         $(this).children(".icon-checkBox-normal").addClass('icon-checkBox');
-//     });
-
-// }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>动物检疫票证</title>
+    <link rel="stylesheet" href="../node_modules/layui/css/layui.css">
+    <link href="../css/ticket.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="ticketPanel ticketRedPanel ticketProductPanel">
+        <section class="toolPanel">
+            <p>动物检疫合格证打印预览</p>
+            <div class="btnPanel">
+                <button class="btn btn-print">打印</button>
+                <button class="btn btn-back">返回</button>
+            </div>
+        </section>
+        <section class="ticketMainPanel">
+            <div class="ticketContentPanel">
+                <header>
+                    <div class="codeImg">
+                        <img src="../images/ticketImg/pic_1.png">
+                    </div>
+                    <div class="textPanel">
+                        <span class="headText">动物检疫合格证明</span>
+                        <span class="subHeadText">（产品B）</span>
+                    </div>
+                    <div class="codeImg">
+                        <img src="../images/ticketImg/pic_1.png">
+                    </div>
+                </header>
+                <p class="headNumberPanel">
+                    <img src="../images/ticketImg/NO.png">
+                    <span class="headNumber">388900210290</span>
+                </p>
+                <section class="tabelPanel">
+                    <table class="table" width="100%" border="0" cellspacing="1" cellpadding="4">
+                        <tr>
+                            <td>货 主</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="张明">
+                                </span>
+                            </td>
+                            <td>产品名称</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="牛肉">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数量及单位</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="壹佰公斤">
+                                </span>
+                            </td>
+                            <td>产地</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建福州">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paddingNone textCenter">生产单位名称地址</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建省福州市鼓楼区温泉支路90号">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>目的地</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建省福州市鼓楼区温泉支路90号">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>检疫标志号</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>备注</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tdLeft">
+                                <section class="sealAreaPanel">
+                                    <div class="topPanel">
+                                        <span>本批动物经检验合格，应于当日内到达有效。</span>
+                                    </div>
+                                    <div class="bottomPanel">
+                                        <p>
+                                            <span>官方兽医签字：</span>
+                                            <span class="subBlankBorderPanel limitWidth120">
+                                                <input type="text">
+                                            </span>
+                                        </p>
+                                        <p class="datePanel">
+                                            <span>签发日期：</span>
+                                            <span>
+                                                <input type="text">
+                                            </span>
+                                            <span>年</span>
+                                            <span>
+                                                <input type="text">
+                                            </span>
+                                            <span>月</span>
+                                            <span>
+                                                <input type="text">
+                                            </span>
+                                            <span>日</span>
+                                        </p>
+                                        <p>(动物卫生检疫监督所专用章)</p>
+                                    </div>
+                                </section>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <footer class="black">
+                    <p>注：</p>
+                    <ol>
+                        <li>本证书一式两联，第一联动物卫生监督所留存，第二联随货同行。</li>
+                        <li>本证书限省境内使用。</li>
+                    </ol>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../node_modules/layui/layui.js"></script>
+</body>
+
+</html>
