@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>动物检疫票证</title>
     <link rel="stylesheet" href="../node_modules/layui/css/layui.css">
     <link href="../css/ticket.css" rel="stylesheet">
-    <!-- <link href="../css/workRecord.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -100,7 +98,7 @@
                                 </span>
                             </td>
                         </tr>
-                        
+
                         <tr>
                             <td colspan="8">养殖场名称</td>
                             <td colspan="16">
@@ -293,7 +291,7 @@
                                     </ul>
                                 </div>
                             </td>
-                            
+
                             <td colspan="5" class="whiteSpace">其他项目检查</td>
                             <td colspan="23">
                                 <span class="blankBorderPanel">
@@ -322,9 +320,9 @@
                             <td class="limitPd8">实验室检测</td>
                             <td colspan="65">
                                 <div class="hasChoose">
-                                        <span class="blankBorderPanel pd-lr40">
-                                                法定检疫对象实验室检测情况
-                                        </span>
+                                    <span class="blankBorderPanel pd-lr40">
+                                        法定检疫对象实验室检测情况
+                                    </span>
                                     <ul class="hasChoose-smallcheck-ul normalFont-ul">
                                         <li>
                                             <a class="icon-checkBox-normal icon-checkBox"></a>
@@ -538,8 +536,26 @@
         </section>
     </div>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/nav.js"></script>
-    <script src="../node_modules/layui/layui.js"></script>
+    <script>
+        $(function () {
+            hasChoose();
+        })
+
+        function hasChoose() {
+            var userUlClickIndex = 0;
+            $(".hasChoose-ul li").click(function () {
+                $(this).addClass("selected").siblings().removeClass("selected");
+            })
+            $(".hasChoose-smallcheck-ul li").click(function () {
+                userUlClickIndex++;
+                if (userUlClickIndex % 2 !== 0) {
+                    $(this).addClass("selected");
+                } else {
+                    $(this).removeClass("selected");
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>

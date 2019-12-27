@@ -1,0 +1,270 @@
+body {
+    background: #f5f5f5;
+}
+
+.noticePanel {
+    width: 100%;
+    height: 100%;
+    font-family: SimSun;
+    font-weight: bold;
+    color: #000;
+}
+
+/* 工具按钮区 */
+.toolPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #99aeca;
+
+}
+
+.toolPanel p {
+    font-size: 16px;
+    color: #8b95a3;
+}
+
+/* 按钮组 */
+.btnPanel .btn {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-print {
+    background: #247bff;
+    color: #fff;
+}
+
+.btn-print:hover {
+    background: #438bf7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back {
+    background: #b2c8ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #aac8f7;
+    color: #fff;
+}
+
+/* 总内容区 */
+.noticeMainPanel {
+    background: #fff;
+    display: flex;
+    margin: 10px auto;
+    width: 1006px;
+}
+
+.main-l {
+    width: 66%;
+    padding: 46px 34px;
+    border-right: 1px solid #000;
+    display: flex;
+}
+
+.main-l .main-l-l {
+    width: 50%;
+}
+
+.main-l .main-l-r {
+    width: calc(50% - 34px);
+    margin-left: 34px;
+}
+
+.main-r {
+    width: 32%;
+    padding: 46px 34px;
+}
+
+.headerPanel {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.headText {
+    font-size: 28px;
+}
+
+.subHeadText {
+    font-size: 15px;
+}
+
+.subHeadNumText {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerPanel p {
+    margin-bottom: 10px;
+}
+
+.contentPanel {
+    font-size: 15px;
+}
+
+.contentPanel-ul {
+    margin-bottom: 12px;
+}
+
+.contentPanel-ul li {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.contentPanel-ul li .blankBottomPanel {
+    text-align: left;
+}
+
+.lableTxt {
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+.blankBottomPanel {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.whiteBlankBottomPanel {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+
+.content-p {
+    text-indent: 2em;
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+
+.signPanel .sealArea {
+    margin-bottom: 32px;
+}
+
+.flexPanel {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottomP {
+    letter-spacing: 4px;
+}
+
+.tdRight {
+    text-align: right;
+}
+.tdCenter {
+    text-align: center;
+}
+
+/* 特殊类 */
+.checkPanel .flexPanel {
+    flex-wrap: wrap;
+}
+
+.specialCheckPanel .sub-checkPanel {
+    margin-top: 18px;
+}
+
+.specialCheckPanel .flexPanel {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.specialCheckPanel .flexPanel .blankBottomPanel {
+    height: 30px;
+}
+
+.specialCheckPanel {
+    margin-bottom: 34px;
+}
+
+.specialHeaderPanel.headerPanel {
+    margin-bottom: 15px;
+}
+
+/* 特殊类 */
+.icon-checkBox-normal {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+.icon-checkBox {
+    width: 10px;
+    height: 10px;
+    background: url("../images/ticketImg/select_1.png") no-repeat;
+    display: inline-block;
+}
+.letterSpacing4{
+    letter-spacing: 4px;
+}
+.limitWidth32 {
+    width: 32px;
+}
+
+.limitWidth32 {
+    width: 32px;
+}
+
+.limitWidth42 {
+    width: 42px;
+}
+
+.limitWidth52 {
+    width: 52px;
+}
+
+.limitWidth146 {
+    width: 146px;
+}
+
+.limitWidth164 {
+    width: 164px;
+}
+
+.g-mgtop25 {
+    margin-top: 25px;
+}
+
+.g-mgtop52 {
+    margin-top: 52px;
+}
+
+.g-mgtop175 {
+    margin-top: 175px;
+}
+
+.g-mgtop190 {
+    margin-top: 190px;
+}
+
+.g-mgbottom28 {
+    margin-bottom: 28px;
+}
+
+.g-mgright8 {
+    margin-right: 8px;
+}
