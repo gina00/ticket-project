@@ -1,0 +1,170 @@
+.table.table-pd tr td {
+    padding: 16px 6px;
+    border: 1px solid #000;
+}
+/* 小间距复选框 */
+.hasChoose-smallcheck-ul.autopd-ul li {
+    margin-right: 5px;
+    font-weight: normal;
+    color: #333;
+}
+
+.hasChoose-smallcheck-ul.normalFont-ul li {
+    font-weight: normal;
+    color: #333;
+}
+/* 居中的复选框 */
+.tdCenter .hasChoose-smallcheck-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.tdCenter .hasChoose-smallcheck-ul li {
+    margin-right: 35px;
+}
+.datePanel-left {
+    text-align: left;
+    text-align-last: left;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.datePanel-right {
+    text-align: right;
+    text-align-last: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+.datePanel input.year {
+    width: 40px;
+}
+
+.datePanel input.other {
+    width: 20px;
+}
+
+.signaturePanel {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signaturePanel .blankBorderPanel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticketPanel .blankBorderPanel input {
+    width: 100%;
+    text-align: left;
+}
+.limitWidth60 {
+    width: 60px;
+}
+
+.limitWidth70 {
+    width: 70px;
+}
+
+.limitWidth90 {
+    width: 90px;
+}
+
+.limitWidth80 {
+    width: 80px;
+}
+
+.limitWidth90 {
+    width: 100px;
+}
+
+.limitWidth100 {
+    width: 100px;
+}
+
+.limitWidth110 {
+    width: 110px;
+}
+
+.limitWidth115 {
+    width: 115px;
+}
+
+.limitWidth120 {
+    width: 120px;
+}
+
+.limitWidth140 {
+    width: 140px;
+}
+
+.limitWidth150 {
+    width: 150px;
+}
+
+.limitWidth160 {
+    width: 160px;
+}
+
+/* 
+.limitWidth120 {
+    min-width: 120px;
+} */
+
+.limitWidth200 {
+    min-width: 200px;
+}
+
+.limitWidth300 {
+    min-width: 300px;
+}
+
+.limitHeight70 {
+    min-height: 70px;
+}
+
+/* 工作单区域 */
+.headNumberPanel {
+    text-align: right;
+    margin-top: 2px;
+    margin-bottom: 14px;
+}
+
+.ticketContentPanel .subHeaderPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 14px;
+}
+
+.ticketContentPanel .boldText {
+    font-weight: bold;
+}
+
+.ticketContentPanel .hasChoose-smallcheck-ul.boldText li {
+    font-weight: bold;
+}
+
+.table tr td.limitWidth {
+    width: 18px;
+    padding: 16px 16px;
+}
+
+.table tr td.limitPd8 {
+    padding: 8px;
+}
+
+.table tr td.limitPd7 {
+    padding: 7px;
+}
+
+.table tr td.limitPd0 {
+    padding: 0px;
+}

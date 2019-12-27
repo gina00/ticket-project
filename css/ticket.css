@@ -32,12 +32,12 @@
 }
 
 /* 产品票证 */
-.ticketProductPanel .table tr td:nth-child(odd).paddingNone {
+.ticketProductPanel .table tr td.paddingNone {
     padding: 16px 2px;
 }
 
-.ticketProductPanel .table tr td:nth-child(odd).textCenter {
-    width: 100px;
+.ticketProductPanel .table tr td.textCenter {
+    width: 120px;
     text-align: center;
     text-align-last: center;
     line-height: 26px;
@@ -131,6 +131,7 @@
 
 .textPanel {
     letter-spacing: 4px;
+    text-align: center;
 }
 
 .headText {
@@ -158,6 +159,11 @@
     height: 40px;
 }
 
+.ticketContentPanel .codeImg img {
+    width: 40px;
+    height: 40px;
+}
+
 /* 表格区域 */
 .tabelPanel {
     margin-top: 6px;
@@ -171,23 +177,27 @@
     border: 1px solid #000;
 }
 
-.table tr td:nth-child(odd) {
+.table.table-pd tr td {
+    padding: 12px 6px;
+    border: 1px solid #000;
+}
+
+.table tr td {
+    text-justify: inter-ideograph;
     text-align: justify;
     text-align-last: justify;
-    text-justify: inter-ideograph;
+    -moz-text-align-last: justify;
+    /*兼容firefox*/
     text-justify: distribute-all-lines;
-    width: 95px;
+    /*兼容ie*/
 }
 
-.table tr td:nth-child(odd).textCenter {
+.table tr td.textCenter {
     text-align: center;
     text-align-last: center;
+    width: 100px;
 }
 
-.table tr td:nth-child(even) {
-    text-align: left;
-    min-width: 90px;
-}
 
 .table tr td.tdCenter {
     text-align: center;
@@ -204,11 +214,18 @@
     height: 102px;
 }
 
-.table tr td:nth-child(odd).line3 {
+.table tr td.line3 {
     letter-spacing: 5px;
     line-height: 24px;
     text-align: center;
     text-align-last: center;
+}
+
+.table tr td.line3-justify {
+    line-height: 24px;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+    text-justify: distribute-all-lines;
 }
 
 /* 城市填写面板 */
@@ -251,6 +268,9 @@
 
 /* 可选择文本 */
 .subTextPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     width: 100%;
@@ -263,6 +283,9 @@
 }
 
 .hasChoose {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -310,13 +333,41 @@
     display: inline-block;
 }
 
+
 .hasChoose-smallcheck-ul li {
     float: left;
     margin-right: 35px;
+    white-space: nowrap;
+}
+
+/* 小间距复选框 */
+.hasChoose-smallcheck-ul.autopd-ul li {
+    margin-right: 5px;
+    font-weight: normal;
+    color: #333;
+}
+
+.hasChoose-smallcheck-ul.autopd-ul.normalFont-ul li {
+    margin-right: 20px;
+}
+
+.hasChoose-smallcheck-ul.normalFont-ul li {
+    font-weight: normal;
+    color: #333;
 }
 
 .hasChoose-smallcheck-ul li input {
     vertical-align: middle;
+}
+
+/* 居中的复选框 */
+.tdCenter .hasChoose-smallcheck-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.tdCenter .hasChoose-smallcheck-ul li {
+    margin-right: 35px;
 }
 
 /* 空白填写区 */
@@ -331,9 +382,15 @@
     display: inline-block;
     padding: 5px 10px;
     border-bottom: 1px solid #000;
+    text-align: center;
+    text-align-last: center;
 }
 
 .subBlankBorderPanel input {
+    width: 100%;
+}
+
+.blankBorderPanel textarea {
     width: 100%;
 }
 
@@ -353,69 +410,249 @@
     margin-right: 22px;
 }
 
+/* 日期区 */
+
 .datePanel {
     margin: 10px 0;
+}
+
+.datePanel-left {
+    text-align: left;
+    text-align-last: left;
+    display: flex;
+    margin: 0;
+}
+
+.datePanel-right {
+    text-align: right;
+    text-align-last: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
 }
 
 .datePanel input {
     width: 43px;
 }
 
+.datePanel input.year {
+    width: 40px;
+}
+
+.datePanel input.other {
+    width: 23px;
+}
+
+.signaturePanel {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signaturePanel .blankBorderPanel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .blankBorderPanel {
     display: inline-block;
     width: 100%;
     text-align: left;
+    text-align-last: left;
+    word-break: break-all;
 }
 
-.blankBorderPanel input {
+.align-left {
+    text-align: left;
+    margin-right: 5px;
+}
+
+.ticketPanel .blankBorderPanel input {
     width: 100%;
     text-align: left;
 }
 
 /* 特别类 */
-.limitWidth200 {
-    min-width: 200px;
+.limitWidth30 {
+    width: 30px;
 }
 
-.limitWidth300 {
-    min-width: 300px;
+.limitWidth35 {
+    width: 35px;
+}
+
+.limitWidth40 {
+    width: 40px;
 }
 
 .limitWidth50 {
     width: 50px;
 }
 
+.limitWidth60 {
+    width: 60px;
+}
+
+.limitWidth70 {
+    width: 70px;
+}
+
+.limitWidth85 {
+    width: 85px;
+}
+
+.limitWidth80 {
+    width: 80px;
+}
+
+.limitWidth90 {
+    width: 90px;
+}
+
+.limitWidth100 {
+    width: 100px;
+}
+
+.limitWidth110 {
+    width: 110px;
+}
+
+.limitWidth115 {
+    width: 115px;
+}
+
+.limitWidth120 {
+    width: 120px;
+}
+
+.limitWidth140 {
+    width: 140px;
+}
+
+.limitWidth150 {
+    width: 150px;
+}
+
+.limitWidth155 {
+    width: 155px;
+}
+
+/* 
 .limitWidth120 {
     min-width: 120px;
+} */
+
+.limitWidth200 {
+    width: 200px;
+}
+
+.letterSp6 {
+    letter-spacing: 6px;
+}
+
+.limitWidth300 {
+    width: 300px;
+}
+
+.limitHeight70 {
+    min-height: 70px;
 }
 
 .limitHeight120 {
     min-height: 120px;
 }
 
-a {
+.ticketPanel a {
     cursor: pointer;
 }
 
-input {
+.ticketPanel input {
     outline: none;
     border: none;
     text-align: center;
 }
 
+.ticketPanel textarea {
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
 /* 注明说明区 */
-footer {
+.ticketContentPanel footer {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
 }
 
-footer ol {
+.ticketContentPanel footer ol {
     margin-left: 20px;
 }
 
-footer ol li {
+.ticketContentPanel footer ol li {
     list-style: decimal;
     margin-bottom: 5px;
+}
+
+/* 工作单区域 */
+.headNumberPanel {
+    text-align: right;
+    margin-top: 2px;
+    margin-bottom: 14px;
+}
+
+.ticketContentPanel .subHeaderPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 14px;
+}
+
+.ticketContentPanel .boldText {
+    font-weight: bold;
+}
+
+.ticketContentPanel .hasChoose-smallcheck-ul.boldText li {
+    font-weight: bold;
+}
+
+.table tr td.limitWidth {
+    width: 15px;
+    padding: 16px 16px;
+}
+
+.table tr td.limitPd8 {
+    padding: 8px;
+}
+
+.table tr td.limitPd7 {
+    padding: 7px;
+}
+
+.table tr td.limitPd0 {
+    padding: 0px;
+}
+
+.table .whiteSpace {
+    white-space: nowrap;
+}
+
+.table .line-left {
+    text-align: left;
+    text-align-last: left;
+    line-height: 24px;
+}
+
+.table .pd-lr40 {
+    padding: 0 40px;
 }

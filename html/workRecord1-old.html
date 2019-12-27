@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>动物检疫票证</title>
+    <link rel="stylesheet" href="../node_modules/layui/css/layui.css">
+    <link href="../css/ticket.css" rel="stylesheet">
+    <!-- <link href="../css/workRecord.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="ticketPanel">
+        <section class="toolPanel">
+            <p>动物检疫合格证打印预览</p>
+            <div class="btnPanel">
+                <button class="btn btn-print">打印</button>
+                <button class="btn btn-back">返回</button>
+            </div>
+        </section>
+        <section class="ticketMainPanel">
+            <div class="ticketContentPanel">
+                <p class="headNumberPanel">
+                    <span class="boldText">记录单编号：B7890</span>
+                </p>
+                <div class="textPanel">
+                    <span class="headText boldText">动物产地检疫工作记录单</span>
+                </div>
+                <p class="subHeaderPanel">
+                    <span class="boldText">动物卫生监督所（分所）名称：福建省动物卫生监督所</span>
+                    <span>单位：头、只、羽、匹、箱</span>
+                </p>
+                <section class="tabelPanel">
+                    <table class="table table-pd" width="100%" border="0" cellspacing="1" cellpadding="4">
+                        <tr>
+                            <td rowspan="8" class="limitWidth">基本情况</td>
+                            <td>报检时间</td>
+                            <td colspan="3">
+                                <p class="datePanel datePanel-left">
+                                    <span>
+                                        <input type="text" value="2019" class="year">
+                                    </span>
+                                    <span>年</span>
+                                    <span>
+                                        <input type="text" value="12" class="other">
+                                    </span>
+                                    <span>月</span>
+                                    <span>
+                                        <input type="text" value="24" class="other">
+                                    </span>
+                                    <span>日</span>
+                                    <span>
+                                        <input type="text" value="16" class="other">
+                                    </span>
+                                    <span>时</span>
+                                </p>
+                            </td>
+                            <td>检疫时间</td>
+                            <td colspan="4">
+                                <p class="datePanel datePanel-left">
+                                    <span>
+                                        <input type="text" value="2019" class="year">
+                                    </span>
+                                    <span>年</span>
+                                    <span>
+                                        <input type="text" value="12" class="other">
+                                    </span>
+                                    <span>月</span>
+                                    <span>
+                                        <input type="text" value="24" class="other">
+                                    </span>
+                                    <span>日</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>货主姓名</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="牛">
+                                </span>
+                            </td>
+                            <td class="limitWidth35 tdCenter">联系<br>电话</td>
+                            <td colspan="2">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="贰头">
+                                </span>
+                            </td>
+                            <td class="limitWidth35 tdCenter">身份<br>证号</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="3821038203840432404">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line3-justify limitWidth100">养殖场、村<br>、原驻地或捕获地名称</td>
+                            <td colspan="3" class="limitWidth100">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建省福州市鼓楼区温泉支路90号">
+                                </span>
+                            </td>
+                            <td class="limitWidth80">检疫地点</td>
+                            <td colspan="4" class="limitWidth100">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建省福州市鼓楼区温泉支路90号">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>动物种类</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="牛">
+                                </span>
+                            </td>
+                            <td>用途</td>
+                            <td colspan="6">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>饲养</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>屠宰</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>育肥</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>种猪</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>仔猪</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>种用</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>乳用</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>役用</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>宠用</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>实验</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>展览</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>演出</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>比赛</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>交易</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>其他</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>动物来源</td>
+                            <td colspan="8" class="tdCenter">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>家畜家禽</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>人工饲养</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>合法捕获</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line3-justify limitWidth115">野生动物驯养繁殖许可证号</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="7DI113840505608409">
+                                </span>
+                            </td>
+                            <td class="line3-justify limitWidth140">野生动物捕捉(猎捕)许可证号</td>
+                            <td colspan="4">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="7DI113840505608409">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数量</td>
+                            <td>
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="8948405">
+                                </span>
+                            </td>
+                            <td colspan="2" class="tdCenter">启运地点</td>
+                            <td colspan="5">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建省福州市鼓楼区鼓东路1号鼓东屠宰场">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>到达地点</td>
+                            <td colspan="4">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="福建省福州市鼓楼区鼓东路1号鼓东屠宰场">
+                                </span>
+                            </td>
+                            <td colspan="2" class="tdCenter">运载工具牌号</td>
+                            <td colspan="2">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="闽A33490">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="limitPd8">查验材料与疫情调查</td>
+                            <td class="line3-justify">是否经强制免疫并在有效期内</td>
+                            <td colspan="2" class="limitWidth115">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>是</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>否</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="line3-justify limitWidth140">养殖场是否符合规定</td>
+                            <td colspan="2" class="limitWidth115">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>符合</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>不符合</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="line3-justify limitWidth120">畜禽标识是否符合规定</td>
+                            <td colspan="2" class="limitWidth120">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>符合</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>不符合</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line3-justify">养殖场疫情(六个月内)</td>
+                            <td colspan="2">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>有</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>无</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>是否疫区</td>
+                            <td colspan="2">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>是</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>否</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth160">其他项目检查</td>
+                            <td colspan="2">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="无">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="limitPd8">临床检查</td>
+                            <td colspan="9" class="tdCenter">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>合格</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>不合格</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="limitPd8">实验室检测</td>
+                            <td colspan="4">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul normalFont-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>需要</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>不需要</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>检测结果</td>
+                            <td colspan="4">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul normalFont-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>合格</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>不合格</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5" class="limitWidth">检测结果处理</td>
+                            <td class="line3-justify">是否符合检<br>疫规定</td>
+                            <td colspan="3">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul normalFont-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>是</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>否</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td colspan="2" class="line3-justify">出具《动物检疫合格证明》编号</td>
+                            <td colspan="3">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="闽A33490">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="limitWidth140">检疫不合格</td>
+                            <td colspan="2" class="limitWidth150">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul boldText">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>法定检疫对象</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth60">数量</td>
+                            <td colspan="2">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="343490">
+                                </span>
+                            </td>
+                            <td class="limitWidth70">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>其它</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth60">数量</td>
+                            <td class="limitWidth120">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="3349000">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>一般处理</td>
+                            <td colspan="5">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul normalFont-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>实验室检测</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>隔离</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>治疗</span>
+                                        </li>
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>其它</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth60">数量</td>
+                            <td class="limitWidth120">
+                                <span class="blankBorderPanel">
+                                    <input type="text" value="">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="limitWidth115">无害化处理</td>
+                            <td class="limitWidth90">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>焚烧</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth80">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>化制</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth90">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>掩埋</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth90">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>发酵</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth90">
+                                <div>
+                                    <ul class="hasChoose-smallcheck-ul autopd-ul">
+                                        <li>
+                                            <a class="icon-checkBox-normal icon-checkBox"></a>
+                                            <span>其它</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="limitWidth40">数量</td>
+                            <td class="limitWidth80"></td>
+                        </tr>
+                        <tr>
+                            <td class="limitWidth120">出具《检疫处理通知单》编号</td>
+                            <td colspan="7"></td>
+                        </tr>
+                        <tr>
+                            <td class="limitPd8">官方兽医姓名</td>
+                            <td colspan="4">
+                                <div class="signaturePanel">
+                                    <div class="blankBorderPanel">
+                                        <input type="text" value="">
+                                    </div>
+                                    <p class="datePanel datePanel-right">
+                                        <span>
+                                            <input type="text" value="2019" class="year">
+                                        </span>
+                                        <span>年</span>
+                                        <span>
+                                            <input type="text" value="12" class="other">
+                                        </span>
+                                        <span>月</span>
+                                        <span>
+                                            <input type="text" value="24" class="other">
+                                        </span>
+                                        <span>日</span>
+                                    </p>
+                                </div>
+
+                            </td>
+                            <td class="limitPd8 limitWidth80">货主签字</td>
+                            <td colspan="4">
+                                <div class="signaturePanel">
+                                    <span class="blankBorderPanel">
+                                        <input type="text" value="">
+                                    </span>
+                                    <p class="datePanel datePanel-right">
+                                        <span>
+                                            <input type="text" value="2019" class="year">
+                                        </span>
+                                        <span>年</span>
+                                        <span>
+                                            <input type="text" value="12" class="other">
+                                        </span>
+                                        <span>月</span>
+                                        <span>
+                                            <input type="text" value="24" class="other">
+                                        </span>
+                                        <span>日</span>
+                                    </p>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../node_modules/layui/layui.js"></script>
+</body>
+
+</html>
