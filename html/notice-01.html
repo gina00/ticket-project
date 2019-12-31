@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>动物检疫申报单</title>
+    <link rel="stylesheet" href="../node_modules/layui/css/layui.css">
+    <link href="../css/ticket-notice.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ticket-noticePanel">
+        <section class="toolPanel">
+            <p>动物检疫合格证打印预览</p>
+            <div class="btnPanel">
+                <button class="btn btn-print">打印</button>
+                <button class="btn btn-back">返回</button>
+            </div>
+        </section>
+        <section class="ticket-noticeMainPanel">
+            <div class="headerPanel">
+                <p class="headText">检疫处理通知单</p>
+                <p class="headNumText">
+                    <span class="lableTxt">编号：</span>
+                    <span class="blankBottomPanel limitWidth114 headBlueFont">D4</span>
+                </p>
+            </div>
+            <div class="ticketNoticeContent">
+                <div class="contentHeader">
+                    <span class="blankBottomPanel limitWidth142 headBlueFont">绿源农场</span>：
+                </div>
+                <div class="contentBody">
+                    <div class="content-p">
+                        <p class="sub-content-p">
+                            按照《中华人民共和国动物防疫法》和《动物检疫管理办法》有关规定，你(单位)的
+                            <span class="blankBottomPanel bodyBlueFont limitWidth">贰头牛</span>
+                            经产地检疫不合格，根据<span
+                                class="blankBottomPanel specailBlankBottomPanel">《动物防疫法》第四十八条“经检疫不合格的动物、动物产品，货主应当在动物卫生监督机构监督下按照国务院兽医主管部门的规定处理，处理费用由货主承担。”</span>
+                            和有关检疫规程之规定，决定进行如下处理：
+                        </p>
+                        <ul class="sub-content-p">
+                            <li>
+                                <span>一、</span>
+                                <span class="blankBottomPanel bodyBlueFont limitWidth">贰头牛</span>
+                            </li>
+                            <li>
+                                <span>二、</span>
+                                <span class="blankBottomPanel bodyBlueFont limitWidth">贰头牛</span>
+                            </li>
+                            <li>
+                                <span>三、</span>
+                                <span class="blankBottomPanel bodyBlueFont limitWidth">贰头牛</span>
+                            </li>
+                            <li>
+                                <span>四、</span>
+                                <span class="blankBottomPanel bodyBlueFont limitWidth">贰头牛</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="contentSealArea">
+                    <p>动物卫生监督所(公章)</p>
+                    <div class="datePanel tdRight">
+                        <span class="whiteBlankBottomPanel tdCenter limitWidth32"> </span>
+                        <span class="lableTxt">年</span>
+                        <span class="whiteBlankBottomPanel tdCenter limitWidth32"> </span>
+                        <span class="lableTxt">月</span>
+                        <span class="whiteBlankBottomPanel tdCenter limitWidth32"> </span>
+                        <span class="lableTxt">日</span>
+                    </div>
+                </div>
+                <div class="signPanel">
+                    <div class="sealArea flexPanel">
+                        <span class="lableTxt">
+                            官方兽医(签名)：
+                        </span>
+                        <span class="whiteBlankBottomPanel">333</span>
+                    </div>
+                    <div class="sealArea flexPanel">
+                        <span class="lableTxt">
+                            当事人签收：
+                        </span>
+                        <span class="whiteBlankBottomPanel">333</span>
+                    </div>
+                </div>
+                <div class="footerNotice">
+                    <p>备注：</p>
+                    <ol>
+                        <li>本通知单一式二份，一份交给当事人，一份动物卫生监督所留存。</li>
+                        <li>动物卫生监督所联系电话：13934904022</li>
+                        <li>当事人联系电话：13934904022</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../node_modules/layui/layui.js"></script>
+    <script>
+        $(function () {
+            hasChoose();
+        })
+
+        function hasChoose() {
+            var userUlClickIndex = 0;
+            $(".checkPanel i").click(function () {
+                userUlClickIndex++;
+                if (userUlClickIndex % 2 !== 0) {
+                    $(this).addClass("icon-checkBox");
+                } else {
+                    $(this).removeClass("icon-checkBox");
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

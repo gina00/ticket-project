@@ -1,0 +1,223 @@
+.ticket-noticePanel {
+    width: 100%;
+    height: 100%;
+    font-family: SimSun;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+}
+
+/* 工具按钮区 */
+.toolPanel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #99aeca;
+
+}
+
+.toolPanel p {
+    font-size: 16px;
+    color: #8b95a3;
+}
+
+/* 按钮组 */
+.btnPanel .btn {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-print {
+    background: #247bff;
+    color: #fff;
+}
+
+.btn-print:hover {
+    background: #438bf7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back {
+    background: #b2c8ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #aac8f7;
+    color: #fff;
+}
+
+/* 总内容区 */
+.ticket-noticeMainPanel {
+    background: #fff;
+    margin: 10px auto;
+    width: 572px;
+    padding: 60px 80px;
+}
+
+.ticket-noticeMainPanel .headerPanel {
+    text-align: center;
+}
+
+.ticket-noticeMainPanel .headText {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.ticket-noticeMainPanel .headNumText {
+    text-align: right;
+}
+
+.ticket-noticeMainPanel .lableTxt {
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+.ticket-noticeMainPanel .blankBottomPanel {
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.ticket-noticeMainPanel .whiteBlankBottomPanel {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    text-indent: 0;
+}
+
+.ticket-noticeMainPanel .flexPanel {
+    display: flex;
+    align-items: flex-end;
+}
+
+.ticket-noticeMainPanel .datePanel {
+    margin-top: 12px;
+}
+
+.tdCenter {
+    text-align: center;
+}
+
+.headBlueFont {
+    color: #0021e9;
+    font-size: 18px;
+}
+
+.bodyBlueFont {
+    color: #0021e9;
+    font-size: 16px;
+    text-indent: 0;
+}
+
+/* 正文区 */
+.ticketNoticeContent {
+    margin-top: 20px;
+}
+
+.contentHeader {
+    margin-bottom: 30px;
+}
+
+.contentBody {
+    margin-bottom: 74px;
+}
+.content-p{
+    line-height:30px;
+    font-size: 16px;
+}
+.sub-content-p {
+    text-indent: 2em;
+}
+.sub-content-p li{
+    height: 36px;
+}
+
+.content-p .specailBlankBottomPanel {
+    display: inline;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+
+.contentSealArea {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.ticketNoticeContent .signPanel {
+    margin-bottom: 42px;
+}
+
+.ticketNoticeContent .signPanel .sealArea {
+    margin-bottom: 6px;
+    text-indent: 2em;
+}
+
+.specialTxt {
+    text-decoration: underline;
+}
+
+/* 注明说明区 */
+.footerNotice {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footerNotice ol {
+    margin-left: 20px;
+}
+
+.footerNotice ol li {
+    list-style: decimal;
+    margin-bottom: 5px;
+}
+
+.limitWidth32 {
+    width: 32px;
+}
+
+.limitWidth32 {
+    width: 32px;
+}
+
+.limitWidth42 {
+    width: 42px;
+}
+
+.limitWidth52 {
+    width: 52px;
+}
+
+.limitWidth114 {
+    width: 114px;
+}
+
+.limitWidth142 {
+    width: 142px;
+}
+
+.limitWidth164 {
+    width: 164px;
+}
+
+.limitWidth {
+    width: 85%;
+}
