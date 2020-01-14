@@ -49,6 +49,12 @@
     top: 83px;
 }
 
+.to-void {
+    position: absolute;
+    left: 11%;
+    top: 10px;
+}
+
 /* 工具按钮区 */
 .toolPanel {
     display: -webkit-box;
@@ -114,6 +120,12 @@
     width: 788px;
     margin: 0 auto;
     position: relative;
+}
+
+.ticketContentPanel.sm-padding {
+    padding: 40px;
+    width: auto;
+    margin-right: 10px;
 }
 
 /* 票证标题 */
@@ -245,7 +257,20 @@
 
 .cityPanel-ul li {
     float: left;
-    width: 25%;
+    width: 27%;
+}
+
+.cityPanel-ul li:first-child {
+    width: 19%;
+}
+
+.cityPanel-ul li .blankBorderPanel {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    word-break: break-all;
+    color: black;
 }
 
 .cityPanel-ul.cityPanel-ul-product li {
@@ -457,6 +482,7 @@
     text-align: left;
     text-align-last: left;
     word-break: break-all;
+    color: black;
 }
 
 .align-left {
@@ -469,7 +495,128 @@
     text-align: left;
 }
 
+/* 时间轴 */
+.progress {
+    background: #fff;
+    color: #000;
+    padding: 26px 14px;
+    height: 512px;
+    overflow: auto;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif, Microsoft YaHei;
+}
+
+.g-timeline {
+    padding-left: 5px;
+}
+
+.g-timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 6px;
+}
+
+.g-timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    border-right: 1px dashed #e6e6e6;
+}
+
+.g-timeline-item:first-child::before {
+    display: block;
+}
+
+.g-timeline-item:last-child::before {
+    display: none;
+}
+
+.g-timeline-axis {
+    position: absolute;
+    left: -5px;
+    top: 0;
+    z-index: 10;
+    width: 22px;
+    height: 24px;
+    line-height: 20px;
+    background-color: #fff;
+    color: #b8b8b8;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.g-timeline-axis::after {
+    content: "●";
+}
+
+.g-timeline-content {
+    padding-left: 25px;
+}
+
+.g-text {
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+    padding-top: 5px;
+}
+
+.g-text h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.g-timeline-item p {
+    margin: 6px 0;
+}
+
+.g-timeline-item .g-timeline-title span {
+    margin-right: 10px;
+}
+
+.g-content {
+    font-size: 14px;
+}
+
+.g-content span {
+    margin-right: 6px;
+}
+
+.g-prove-type {
+    font-size: 16px;
+}
+
+/* 正在进行的进度 */
+.g-being-progress::before {
+    border-right: 1px dashed #247bff;
+}
+
+.g-being-progress .g-timeline-axis {
+    color: #247cff;
+}
+
+.g-being-progress .g-timeline-title {
+    color: #000;
+    font-size: 16px;
+}
+
+.g-being-progress .g-prove-type {
+    color: #247bff;
+}
+
+.g-being-progress .g-content {
+    color: #000;
+    font-size: 14px;
+}
+
 /* 特别类 */
+.limitWidth1 {
+    width: 1px;
+}
+
 .limitWidth30 {
     width: 30px;
 }
@@ -651,4 +798,20 @@
 
 .table .pd-lr40 {
     padding: 0 40px;
+}
+
+/* 美化票证滚动条 */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #dddee0;
 }
