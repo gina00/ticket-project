@@ -31,6 +31,26 @@
                     <span>欢迎您：</span>
                     <a>admin</a>
                 </div>
+                <div class="selectPanel">
+                    <div class="select">
+                        <input type="text" placeholder="请选择">
+                        <a class="icon-down" id="downBtn"></a>
+                    </div>
+                    <ul class="downlistPanel" id="downlistPanel" style="display: none;">
+                        <li>
+                            <a>下拉选项1</a>
+                        </li>
+                        <li>
+                            <a>下拉选项2</a>
+                        </li>
+                        <li>
+                            <a>下拉选项3</a>
+                        </li>
+                        <li>
+                            <a>下拉选项4</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -243,7 +263,8 @@
                                         src="html/workRecord3.html" width="100%" height="100%" frameborder="0"
                                         scrolling="yes">
                                     </iframe>
-                                </div><div class="layui-tab-item">
+                                </div>
+                                <div class="layui-tab-item">
                                     <iframe name="menuFrame" class="menuFrame" onload="reinitIframe()"
                                         src="html/declaration.html" width="100%" height="100%" frameborder="0"
                                         scrolling="yes">
@@ -261,6 +282,7 @@
         $(function () {
             bulidMenu();
             FrameWH();
+            showDownList();
         })
 
         function bulidMenu() {

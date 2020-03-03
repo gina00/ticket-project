@@ -1,6 +1,7 @@
 $(document).ready(function () {
     slide_menu();
-    hasChoose()
+    hasChoose();
+    showDownList()
 });
 
 function slide_menu() {
@@ -58,4 +59,30 @@ function hasChoose() {
             $(this).removeClass("selected");
         }
     })
+}
+
+// 下拉列表
+function showDownList() {
+    var userUlClickIndex = 0;
+    $('#downBtn').click(function (event) {
+        //取消事件冒泡  
+        event.stopPropagation();
+        userUlClickIndex++;
+        if (userUlClickIndex % 2 !== 0) {
+            $(this).addClass("icon-up");
+            $('#downlistPanel').show();
+        } else {
+            $(this).removeClass("icon-up");
+            $('#downlistPanel').hide();
+        }
+        return false;
+    });
+    //点击空白处隐藏弹出层
+    $(document).click(function (event) {
+        var _con = $('#downlistPanel'); // 设置目标区域
+        if (!_con.is(event.target) && _con.has(event.target).length === 0) {
+            $("#downBtn").removeClass("icon-up");
+            $('#downlistPanel').hide(); //淡出消失
+        }
+    });
 }
